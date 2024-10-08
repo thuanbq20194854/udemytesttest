@@ -1,0 +1,4 @@
+export const PUBLIC_PROFILE_TABS = {
+    SUBSCRIBED_COURSE: 0,
+    WISHLIST_COURSE: 1,
+};

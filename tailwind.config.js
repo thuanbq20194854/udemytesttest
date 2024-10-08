@@ -1,0 +1,127 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+  ],
+  prefix: "",
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      colors: {
+        "app-gray-600": "#101112",
+        "app-gray-550": "#1c1d1f",
+        "app-gray-500": "#2d2f31",
+        "app-gray-400": "#3e4143",
+        "app-gray-350": "#54585b",
+        "app-gray-300": "#6a6f73",
+        "app-gray-250": "#9da3a7",
+        "app-gray-200": "#d1d7dc",
+        "app-gray-150": "#e4e8eb",
+        "app-gray-100": "#f7f9fa",
+        "app-red-500": "#612012",
+        "app-red-450": "#8a2610",
+        "app-red-400": "#b32d0f",
+        "app-red-350": "#da3c18",
+        "app-red-300": "#f4522d",
+        "app-red-250": "#ef8e70",
+        "app-red-200": "#fcbca0",
+        "app-red-150": "#fbd5c4",
+        "app-red-100": "#fbece9",
+        "app-blue-500": "#180a3d",
+        "app-blue-450": "#281160",
+        "app-blue-400": "#371783",
+        "app-blue-350": "#431ca3",
+        "app-blue-300": "#5022c3",
+        "app-blue-250": "#8072e6",
+        "app-blue-200": "#c0c4fc",
+        "app-blue-150": "#d8e0fb",
+        "app-blue-100": "#eeeffc",
+        //"/xt-app-indigo-500": var(--color-blue-500),
+        //"/xt-app-indigo-400": var(--color-blue-400),
+        //"/xt-app-indigo-300": var(--color-blue-300),
+        //"/xt-app-indigo-200": var(--color-blue-200),
+        //"/xt-app-indigo-100": var(--color-blue-100),
+        "app-orange-500": "#4d3105",
+        "app-orange-450": "#804d09",
+        "app-orange-400": "#b4690e",
+        "app-orange-350": "#df890c",
+        "app-orange-300": "#f69c08",
+        "app-orange-250": "#ebb152",
+        "app-orange-200": "#f3ca8c",
+        "app-orange-150": "#f7dfba",
+        "app-orange-100": "#fcf5e8",
+        "app-yellow-500": "#3d3c0a",
+        "app-yellow-450": "#6b6913",
+        "app-yellow-400": "#98961b",
+        "app-yellow-350": "#d2cf1e",
+        "app-yellow-300": "#e9e729",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+
+
+
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+}

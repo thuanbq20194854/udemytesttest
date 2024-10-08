@@ -1,0 +1,353 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+
+    --color-gray-600: #101112;
+    --color-gray-550: #1c1d1f;
+    --color-gray-500: #2d2f31;
+    --color-gray-400: #3e4143;
+    --color-gray-350: #54585b;
+    --color-gray-300: #6a6f73;
+    --color-gray-250: #9da3a7;
+    --color-gray-200: #d1d7dc;
+    --color-gray-150: #e4e8eb;
+    --color-gray-100: #f7f9fa;
+    --color-red-500: #612012;
+    --color-red-450: #8a2610;
+    --color-red-400: #b32d0f;
+    --color-red-350: #da3c18;
+    --color-red-300: #f4522d;
+    --color-red-250: #ef8e70;
+    --color-red-200: #fcbca0;
+    --color-red-150: #fbd5c4;
+    --color-red-100: #fbece9;
+    --color-blue-500: #180a3d;
+    --color-blue-450: #281160;
+    --color-blue-400: #371783;
+    --color-blue-350: #431ca3;
+    --color-blue-300: #5022c3;
+    --color-blue-250: #8072e6;
+    --color-blue-200: #c0c4fc;
+    --color-blue-150: #d8e0fb;
+    --color-blue-100: #eeeffc;
+    --color-indigo-500: var(--color-blue-500);
+    --color-indigo-400: var(--color-blue-400);
+    --color-indigo-300: var(--color-blue-300);
+    --color-indigo-200: var(--color-blue-200);
+    --color-indigo-100: var(--color-blue-100);
+    --color-orange-500: #4d3105;
+    --color-orange-450: #804d09;
+    --color-orange-400: #b4690e;
+    --color-orange-350: #df890c;
+    --color-orange-300: #f69c08;
+    --color-orange-250: #ebb152;
+    --color-orange-200: #f3ca8c;
+    --color-orange-150: #f7dfba;
+    --color-orange-100: #fcf5e8;
+    --color-yellow-500: #3d3c0a;
+    --color-yellow-450: #6b6913;
+    --color-yellow-400: #98961b;
+    --color-yellow-350: #d2cf1e;
+    --color-yellow-300: #e9e729;
+    --color-yellow-250: #eeec5d;
+    --color-yellow-200: #eceb98;
+    --color-yellow-150: #f3f2b8;
+    --color-yellow-100: #f9f9d7;
+    --color-green-500: #113731;
+    --color-green-450: #174b43;
+    --color-green-400: #1e6055;
+    --color-green-350: #1b8170;
+    --color-green-300: #19a38c;
+    --color-green-250: #6cb1a5;
+    --color-green-200: #acd2cc;
+    --color-green-150: #cfe4e1;
+    --color-green-100: #f2f7f6;
+    --color-purple-500: #350c50;
+    --color-purple-450: #541879;
+    --color-purple-400: #7325a3;
+    --color-purple-350: #8b2dc9;
+    --color-purple-300: #a435f0;
+    --color-purple-250: #c377f6;
+    --color-purple-200: #e1b8fc;
+    --color-purple-150: #ebd3fc;
+    --color-purple-100: #f6eefc;
+    --color-white: #fff;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ul,
+  li,
+  link {
+    list-style-type: none;
+    text-decoration: none;
+    font-style: none;
+  }
+
+  input {
+    outline: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+
+  html {
+    /* font-size: 62.5%; */
+  }
+
+
+}
+
+@layer utilities {
+
+  /* text , heading */
+  .ud-text-xs {
+    font-family: var(--font-stack-text);
+    font-weight: 400;
+    line-height: 1.4;
+    /* font-size: 1.2rem; */
+    font-size: 12px;
+  }
+
+  .ud-text-sm {
+    font-family: var(--font-stack-text);
+    font-weight: 400;
+    line-height: 1.4;
+    /* font-size: 1.4rem; */
+    font-size: 14px;
+  }
+
+  .ud-text-md {
+    font-family: var(--font-stack-text);
+    font-weight: 400;
+    line-height: 1.4;
+    /* font-size: 1.6rem; */
+    font-size: 16px;
+  }
+
+  .ud-heading-sm {
+    font-family: var(--font-stack-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+
+  .ud-heading-md {
+    font-family: var(--font-stack-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+
+  .ud-heading-lg {
+    font-family: var(--font-stack-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-size: 19px;
+    max-width: 36em;
+  }
+
+  .ud-heading-serif-xxl {
+    font-family: var(--font-stack-heading-serif);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -.016rem;
+    max-width: 36em;
+  }
+
+  /*  */
+
+  .ellipse-2-lines {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  .ellipse-1-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Button */
+
+  .ud-btn {
+    position: relative;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    max-width: 100%;
+    min-width: 80px;
+    padding: 0 12px;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+
+  .ud-btn-large {
+    height: 48px;
+  }
+
+  .ud-btn-primary,
+  .ud-btn-primary.ud-btn-disabled {
+    background-color: var(--color-gray-500);
+  }
+
+  .ud-btn-primary,
+  .ud-btn-white-outline,
+  .ud-btn-brand {
+    color: var(--color-white);
+  }
+
+  .ud-btn-primary:active,
+  .ud-btn-primary:hover {
+    background-color: var(--color-gray-400);
+  }
+
+
+  .ud-btn-secondary,
+  .ud-btn-secondary.ud-btn-disabled {
+    color: var(--color-gray-500);
+    background-color: transparent;
+    border: 1px solid #2d2f31;
+  }
+
+  .ud-btn-secondary:active,
+  .ud-btn-secondary:hover {
+    color: var(--color-gray-500);
+    background-color: rgba(23, 57, 83, .12);
+  }
+
+  .ud-btn-medium {
+    height: 40px;
+  }
+
+  .ud-btn-large {
+    height: 48px;
+  }
+
+  /*  */
+  .ud-unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .ud-block-list-item-content {
+    flex: 1;
+    min-width: 1px;
+  }
+
+  .ud-block-list .ud-block-list-item-neutral {
+    color: #2d2f31;
+  }
+
+  .ud-block-list .ud-block-list-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    letter-spacing: normal;
+    white-space: normal;
+  }
+
+  .ud-btn-ghost,
+  .ud-btn-ghost.ud-btn-disabled,
+  .ud-btn-link,
+  .ud-btn-link.ud-btn-disabled,
+  .ud-btn-link-underline,
+  .ud-btn-link-underline.ud-btn-disabled {
+    color: #5022c3;
+    background-color: transparent;
+    min-width: auto;
+    padding: 0;
+  }
+
+
+
+  /*  */
+
+  .absoluteCenter {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
